@@ -15,7 +15,7 @@ class App < Sinatra::Base
     @name = params[:name].reverse
     "Hello, #{@name}"
   end 
-  
+  #Cassidy
   get '/square/:num1' do
     @num1 = params[:num1].to_i 
     (@num1 * @num1).to_s
@@ -23,6 +23,10 @@ class App < Sinatra::Base
   get '/square/:num1' do
     @num1 = params[:num1].to_i 
     (@num1**2).to_s
+  end 
+  #Chloe number 3
+  get '/say/:number/:phrase' do
+    
   end 
   
 end
