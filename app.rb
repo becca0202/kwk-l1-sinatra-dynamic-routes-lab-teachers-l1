@@ -8,7 +8,7 @@ class App < Sinatra::Base
     return @name.reverse
   end 
   # Nancy
-  # get '/reversename/:name' do
-  #   @name = params[:name].reverse
-  # end 
+  get '/reversename/:name' do
+    @name = params[:name].reverse
+  end 
 end
