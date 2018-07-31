@@ -16,10 +16,10 @@ class App < Sinatra::Base
     "Hello, #{@name}"
   end 
   
-  get '/square/:num1' do
-    @num1 = params[:num1].to_i 
-    (@num1 * @num1).to_s
-  end 
+  # get '/square/:num1' do
+  #   @num1 = params[:num1].to_i 
+  #   (@num1 * @num1).to_s
+  # end 
   get '/square/:num1' do
     @num1 = params[:num1].to_i 
     (@num1**2).to_s
