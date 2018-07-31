@@ -67,8 +67,4 @@ class App < Sinatra::Base
       "Cannot do that operation"
     end 
   end 
-  
 end
-
-trial = App.new 
-trial.
