@@ -26,7 +26,11 @@ class App < Sinatra::Base
   end 
   #Chloe number 3
   get '/say/:number/:phrase' do
-    
+    final_string = ""
+    (params[:number].to_i).times do
+      final_string += "#{params[:phrase]}"
+    end
+    final_string
   end 
   
 end
