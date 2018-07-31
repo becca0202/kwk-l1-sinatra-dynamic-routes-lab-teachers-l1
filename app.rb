@@ -25,17 +25,19 @@ class App < Sinatra::Base
     (@num1**2).to_s
   end 
   #Chloe number 3
-  # get '/say/:number/:phrase' do
-  #   final_string = ""
-  #   (params[:number].to_i).times do
-  #     final_string += "#{params[:phrase]}"
-  #   end
-  #   final_string
-  # end 
+  get '/say/:number/:phrase' do
+    final_string = ""
+    (params[:number].to_i).times do
+      final_string += "#{params[:phrase]}"
+    end
+    final_string
+  end 
   #Anna
   get '/say/:num1/:phrase' do
     num1 = params[:num1].to_i 
     @phrase = params[:phrase]
     (@phrase * num1)
   end 
+  #Kate
+  get 
 end
