@@ -39,9 +39,9 @@ class App < Sinatra::Base
     (@phrase * num1)
   end 
   #Kate
-  # get '/say/:word1/:word2/:word3/:word4/:word5' do 
-  #   "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
-  # end 
+  get '/say/:word1/:word2/:word3/:word4/:word5' do 
+    "#{params[:word1]} #{params[:word2]} #{params[:word3]} #{params[:word4]} #{params[:word5]}."
+  end 
   #Izzi
   get '/say/:word1/:word2/:word3/:word4/:word5' do 
     word1 = params[:word1]
@@ -51,4 +51,6 @@ class App < Sinatra::Base
     word5 = params[:word5]
     "#{word1} #{word2} #{word3} #{word4} #{word5}."
   end 
+  
+  
 end
