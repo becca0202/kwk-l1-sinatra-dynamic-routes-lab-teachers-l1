@@ -11,4 +11,8 @@ class App < Sinatra::Base
   get '/reversename/:name' do
     @name = params[:name].reverse
   end 
+  get '/reversename/:name' do
+    @name = params[:name].reverse
+    "Hello, #{@name}"
+  end 
 end
