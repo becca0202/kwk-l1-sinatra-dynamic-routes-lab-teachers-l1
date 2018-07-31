@@ -70,4 +70,5 @@ class App < Sinatra::Base
   
 end
 
-
+trial = App.new 
+trial.
